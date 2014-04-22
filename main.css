@@ -1,0 +1,255 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html { 
+  background: url(Images/2006-10-22Colocasia01.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.directions {
+	background-color: black;
+	font-family: Amatic SC;
+	font-size: 31px;
+	border-radius: 10px;
+	width: 110px;
+	padding: 7px;
+	color: white;
+	margin-left: 20px;
+	margin-top: 20px;
+	border: none;
+	font-weight: bold;
+}
+
+.newGame {
+	background-color: black;
+	font-family: Amatic SC;
+	font-size: 31px;
+	border-radius: 10px;
+	width: 110px;
+	padding: 7px;
+	color: white;
+	margin-left: 20px;
+	margin-top: 20px;
+	border: none;
+	font-weight: bold;
+	float: right;
+	margin-right: 20px;
+}
+
+h1 {
+	color: white;
+	font-size: 80px;
+	font-family: Amatic SC;
+	text-align: center;
+	font-weight: bold;
+}
+
+.questionSection {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 1;
+}
+ 
+.questionNumber {
+	color: white;
+	font-family: Amatic SC;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 40px;
+	z-index: 1; 
+}
+
+.question {
+	color: white;
+	font-family: Josefin Sans;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 25px;
+	z-index: 1;
+}
+
+.answerOptions {
+	color: white;
+	font-family: Josefin Sans;
+	text-align: left;
+	font-size: 25px;
+	margin-top: 25px;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 1;
+}
+
+.submit {
+	text-align: center;
+	background-color: white;
+	font-family: Amatic SC;
+	font-size: 25px;
+	border-radius: 10px;
+	width: 60px;
+	margin-right: auto;
+	margin-left: 335px;
+	padding: 7px;
+	margin-top: 30px;
+	border: none;
+	color: black;
+	font-weight: bold;
+	z-index: 1;
+}
+
+.next {
+	text-align: center;
+	background-color: yellow;
+	font-family: Amatic SC;
+	font-size: 25px;
+	border-radius: 10px;
+	width: 60px;
+	margin-right: auto;
+	margin-left: 15px;
+	padding: 7px;
+	margin-top: 30px;
+	border: none;
+	color: black;
+	font-weight: bold;
+	z-index: 1;
+	display: none;
+}
+
+.comment {
+	color: white;
+	font-family: Josefin Sans;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 25px;
+	display: none;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+.definitionBox {
+	width: 900px;
+	height: 440px;
+	background-color: black;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -410px;
+	margin-left: 240px;
+	border-radius: 10px;
+	display: none;
+	z-index: 1000;
+	position: absolute;
+}
+
+.pronunciation {
+	color: white;
+	font-family: Amatic SC;
+	font-size: 40px;
+	padding-top: 35px;
+	padding-left: 80px;
+	z-index: 1000;
+}
+
+.pos {
+	color: white;
+	font-family: Amatic SC;
+	font-size: 35px;
+	padding-left: 80px;
+	padding-top: 10px;
+	z-index: 1000;
+}
+
+.definition {
+	color: white;
+	font-family: Josefin Sans;
+	font-size: 23px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 20px;
+	z-index: 1000;
+}
+
+.button {
+	width: 110px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.letsPlay {
+	text-align: center;
+	background-color: white;
+	font-family: Amatic SC;
+	font-size: 31px;
+	border-radius: 10px;
+	width: 110px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 7px;
+	margin-top: 30px;
+	border: none;
+	color: black;
+	font-weight: bold;
+	z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
