@@ -64,7 +64,7 @@ html {
 	font-weight: bold;
 }
 
-.newGame {
+.newQuiz {
 	background-color: black;
 	font-family: Amatic SC;
 	font-size: 31px;
@@ -158,6 +158,26 @@ h1 {
 	font-weight: bold;
 	z-index: 1;
 	display: none;
+	position: absolute;
+}
+
+.score {
+	text-align: center;
+	background-color: yellow;
+	font-family: Amatic SC;
+	font-size: 25px;
+	border-radius: 10px;
+	width: 60px;
+	margin-right: auto;
+	margin-left: 575px;
+	padding: 7px;
+	margin-top: 30px;
+	border: none;
+	color: black;
+	font-weight: bold;
+	z-index: 1;
+	display: none;
+	position: absolute;
 }
 
 .comment {
@@ -194,8 +214,8 @@ h1 {
 	color: white;
 	font-family: Amatic SC;
 	font-size: 40px;
-	padding-top: 35px;
-	padding-left: 80px;
+	padding-top: 30px;
+	padding-left: 70px;
 	z-index: 1000;
 }
 
@@ -203,7 +223,7 @@ h1 {
 	color: white;
 	font-family: Amatic SC;
 	font-size: 35px;
-	padding-left: 80px;
+	padding-left: 70px;
 	padding-top: 10px;
 	z-index: 1000;
 }
@@ -212,9 +232,9 @@ h1 {
 	color: white;
 	font-family: Josefin Sans;
 	font-size: 23px;
-	padding-left: 80px;
-	padding-right: 80px;
-	padding-top: 20px;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 15px;
 	z-index: 1000;
 }
 
@@ -234,12 +254,76 @@ h1 {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 7px;
-	margin-top: 30px;
+	margin-top: 20px;
 	border: none;
 	color: black;
 	font-weight: bold;
 	z-index: 1000;
 }
+
+.scoreTime {
+	width: 900px;
+	height: 440px;
+	background-color: black;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -470px;
+	margin-left: 240px;
+	border-radius: 10px;
+	display: none;
+	z-index: 1000;
+	position: absolute;
+}
+
+.scoreHeader {
+	color: white;
+	font-family: Amatic SC;
+	font-size: 70px;
+	padding-top: 40px;
+	text-align: center;
+	z-index: 1000;
+}
+
+.tryAgain {
+	text-align: center;
+	background-color: white;
+	font-family: Amatic SC;
+	font-size: 31px;
+	border-radius: 10px;
+	width: 110px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 7px;
+	margin-top: 20px;
+	border: none;
+	color: black;
+	font-weight: bold;
+	z-index: 1000;
+}
+
+#scoreInput {
+	color: white;
+	font-family: Amatic SC;
+	font-size: 90px;
+	padding-top: 40px;
+	text-align: center;
+	z-index: 1000;
+	display: none;
+}
+
+.result0, .result1, .result2, .result3, .result4, .result5 {
+	color: white;
+	font-family: Josefin Sans;
+	font-size: 26px;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: center;
+	padding-top: 15px;
+	z-index: 1000;
+	display: none;
+}
+
+
 
 
 

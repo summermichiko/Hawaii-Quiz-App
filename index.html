@@ -9,8 +9,8 @@
 	</head>
 	<body>
 		<div class="header">
-			<button class="directions" type="button">Directions</button>
-			<button class="newGame" type="button">New Quiz</button>
+			<button class="directions" type="button">About</button>
+			<button class="newQuiz" type="button">New Quiz</button>
 		</div>
 		<div class="title">
 			<h1>Kama`aina Quiz</h1>
@@ -32,9 +32,10 @@
 		<div class="submitButton">
 			<input class="submit" type="button" value="Submit">
 			<input class="next" type="button" value="Next">
+			<input class="score" type="button" value="Score">
 		</div>
 		<div class="comment">
-			<p>Get out of town and catch some waves at Sandy's!</p>
+			<p>Get out of town and catch some waves at SANDY'S!</p>
 		</div>
 		
 
@@ -44,13 +45,28 @@
 			<h2 class="pronunciation">Kama`aina  [kah-mah-EYE-nah]</h2>
 			<p class="pos">noun</p>
 			<p class="definition">A long-term resident of the Hawaiian Islands - literally "child of the land," it derives from the words "kama", meaning "child", and "ʻāina", meaning 'land'. The word "kamaʻaina" describes Hawaiʻi residents regardless of their racial background, as opposed to "kanaka" which means a person of native Hawaiian ancestry.
-			A kamaʻaina in the traditional sense is someone born in Hawaiʻi or who has made their residence in the islands for many years. More recently, the definition of a kamaʻaina has been expanded to include anyone who currently lives in Hawaiʻi, or who once lived there but has moved away.</p>
+			A kamaʻaina in the traditional sense is someone born in Hawaiʻi or who has made their residence in the islands for many years. More recently, the definition of a kamaʻaina has been expanded to include anyone who currently lives in Hawaiʻi, or who once lived there but has moved away. Take the quiz and find out if you're kama`aina! Good luck!</p>
 			<div class="button">
 				<button class="letsPlay" type="button">Let's Play!</button>
 			</div>
 		</div>
 
-
+		<div class="scoreTime">
+			<h2 class="scoreHeader">
+			YOU SCORED</h2>
+			<div id="scoreInput"></div>
+			<div class="resultOptions">
+				<p class="result0">You should probably get to Hawai`i when you have a chance. Don't worry, you'll learn fast!</p>
+				<p class="result1">Everyone has to take baby steps. You'll get there one spam musubi at a time.</p>
+				<p class="result2">Find the Uncles who play music at Ala Moana and hang with them for a bit. Hopefully they'll rub off on you a little.</p>
+				<p class="result3">Not quite there. Eat a few more loco mocos, and you'll be there in no time!</p>
+				<p class="result4">We'll call you "kama`aina in training." You'll fit in in no time at all!</p>
+				<p class="result5">Chee hoo! Kama`aina discounts are the best!</p>
+			</div>
+			<div class="button">
+				<input class="tryAgain" type="button" value="Try Again">
+			</div>
+		</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 	</body>
