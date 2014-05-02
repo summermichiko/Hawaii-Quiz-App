@@ -81,9 +81,10 @@ $(document).ready(function() {
 		$("#scoreInput").html("");
 		$(".scoreTime").show();
 		$(".scoreHeader").show();
-		$("#scoreInput").append(numberCorrect).show();
 		$(".tryAgain").show();
+		$("#scoreInput").append(numberCorrect).show();
 		if (numberCorrect == 0) {
+			//use append?
 			$(".result0").show();
 		} if (numberCorrect == 1) {
 			$(".result1").show();
@@ -106,6 +107,12 @@ $(document).ready(function() {
 	function reStart() {
 		numberCorrect == 0;
 		currentQuestion = 1;
+		$(".result0").hide();
+		$(".result1").hide();
+		$(".result2").hide();
+		$(".result3").hide();
+		$(".result4").hide();
+		$(".result5").hide();
 		$(".comment").hide();
 		$(".next").hide();
 		$(".score").hide();
