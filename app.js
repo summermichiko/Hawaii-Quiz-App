@@ -54,6 +54,13 @@ $(document).ready(function() {
 		checkAnswer();
 	});
 
+	function checkAnswer() {
+		var answer = $('input[type="radio"]:checked').val();
+		if (answer == questions[currentQuestion].correct) {
+			numberCorrect++;
+		};
+	};
+
 	$(".next").click(function() {
 		 moveOn();
 	});
@@ -70,25 +77,8 @@ $(document).ready(function() {
 		};
 	};
 
-	$(".newQuiz").click(function() {
-		reStart();
-		numberCorrect == 0;
-		$(".scoreTime").hide();
-		$(numberCorrect).remove();
-		$(".scoreInput").hide();
-		$(".result0", ".result1", ".result2", ".result3", ".result4", ".result5").hide();
-	});
-
-	function reStart() {
-		currentQuestion = 1;
-		$(".comment").hide();
-		$(".next").hide();
-		$(".score").hide();
-		var newQuestion = '<div class="questionSection"><h3 class="questionNumber">Question #' + currentQuestion + '</h3><p class="question">' + questions[currentQuestion].question + '</p><form class="answerOptions"><input type="radio" name="option" value="0"><span class="option">' + questions[currentQuestion].answerOptions[0] + '</span><br><input type="radio" name="option" value="1"><span class="option">' + questions[currentQuestion].answerOptions[1] + '</span><br><input type="radio" name="option" value="2"><span class="option">' + questions[currentQuestion].answerOptions[2] + '</span><br><input type="radio" name="option" value="3"><span class="option">' + questions[currentQuestion].answerOptions[3] + '</span><br></form></div>';
-		$(".questionSection").html(newQuestion);
-	};
-
 	$(".score").click(function() {
+		$("#scoreInput").html("");
 		$(".scoreTime").show();
 		$(".scoreHeader").show();
 		$("#scoreInput").append(numberCorrect).show();
@@ -108,19 +98,25 @@ $(document).ready(function() {
 		};
 	});
 
-	$(".tryAgain").click(function() {
+	$(".newQuiz").click(function() {
+		reStart();
 		$(".scoreTime").hide();
-		$(".scoreHeader").hide();
-		$(".tryAgain").hide();
 	});
 
-	function checkAnswer() {
-		var answer = $('input[type="radio"]:checked').val();
-		if (answer == questions[currentQuestion].correct) {
-			numberCorrect++;
-		};
+	function reStart() {
+		numberCorrect == 0;
+		currentQuestion = 1;
+		$(".comment").hide();
+		$(".next").hide();
+		$(".score").hide();
+		var newQuestion = '<div class="questionSection"><h3 class="questionNumber">Question #' + currentQuestion + '</h3><p class="question">' + questions[currentQuestion].question + '</p><form class="answerOptions"><input type="radio" name="option" value="0"><span class="option">' + questions[currentQuestion].answerOptions[0] + '</span><br><input type="radio" name="option" value="1"><span class="option">' + questions[currentQuestion].answerOptions[1] + '</span><br><input type="radio" name="option" value="2"><span class="option">' + questions[currentQuestion].answerOptions[2] + '</span><br><input type="radio" name="option" value="3"><span class="option">' + questions[currentQuestion].answerOptions[3] + '</span><br></form></div>';
+		$(".questionSection").html(newQuestion);
 	};
 
+	$(".tryAgain").click(function() {
+		$(".scoreTime").hide();
+		numberCorrect = 0;
+	});
 });
 
 
