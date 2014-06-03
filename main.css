@@ -62,6 +62,8 @@ html {
 	margin-top: 20px;
 	border: none;
 	font-weight: bold;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .newQuiz {
@@ -78,6 +80,8 @@ html {
 	font-weight: bold;
 	float: right;
 	margin-right: 20px;
+	cursor: pointer;
+	cursor: hand;
 }
 
 h1 {
@@ -140,6 +144,8 @@ h1 {
 	color: black;
 	font-weight: bold;
 	z-index: 1;
+	cursor: hand;
+	cursor: pointer;
 }
 
 .next {
@@ -159,6 +165,8 @@ h1 {
 	z-index: 1;
 	display: none;
 	position: absolute;
+	cursor: hand;
+	cursor: pointer;
 }
 
 .score {
@@ -178,6 +186,8 @@ h1 {
 	z-index: 1;
 	display: none;
 	position: absolute;
+	cursor: hand;
+	cursor: pointer;
 }
 
 .comment {
@@ -236,6 +246,8 @@ h1 {
 	width: 110px;
 	margin-right: auto;
 	margin-left: auto;
+	cursor: hand;
+	cursor: pointer;
 }
 
 .letsPlay {
@@ -253,6 +265,8 @@ h1 {
 	color: black;
 	font-weight: bold;
 	z-index: 1000;
+	cursor: hand;
+	cursor: pointer;
 }
 
 .scoreTime {
@@ -293,6 +307,8 @@ h1 {
 	color: black;
 	font-weight: bold;
 	z-index: 1000;
+	cursor: hand;
+	cursor: pointer;
 }
 
 #scoreInput {
