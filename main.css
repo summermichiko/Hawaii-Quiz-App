@@ -62,6 +62,8 @@ html {
 	margin-top: 20px;
 	border: none;
 	font-weight: bold;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .newQuiz {
@@ -78,6 +80,8 @@ html {
 	font-weight: bold;
 	float: right;
 	margin-right: 20px;
+	cursor: pointer;
+	cursor: hand;
 }
 
 h1 {
