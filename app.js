@@ -82,9 +82,9 @@ $(document).ready(function() {
 		$(".scoreTime").show();
 		$(".scoreHeader").show();
 		$(".tryAgain").show();
-		$("#scoreInput").append(numberCorrect).show();
+		$("#scoreInput").append(numberCorrect + "/5").show();
 		if (numberCorrect == 0) {
-			$(".result0" + "/5").show();
+			$(".result0").show();
 		} if (numberCorrect == 1) {
 			$(".result1").show();
 		} if (numberCorrect == 2) {
