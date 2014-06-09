@@ -84,7 +84,6 @@ $(document).ready(function() {
 		$(".tryAgain").show();
 		$("#scoreInput").append(numberCorrect).show();
 		if (numberCorrect == 0) {
-			//use append?
 			$(".result0").show();
 		} if (numberCorrect == 1) {
 			$(".result1").show();
