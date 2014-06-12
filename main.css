@@ -129,15 +129,23 @@ h1 {
 	z-index: 1;
 }
 
+.submitButton {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	position: relative;
+}
+
 .submit {
 	text-align: center;
 	background-color: white;
 	font-family: Amatic SC;
 	font-size: 25px;
 	border-radius: 10px;
-	width: 60px;
+	width: 70px;
 	margin-right: auto;
-	margin-left: 335px;
+	margin-left: auto;
+	text-align: center;
 	padding: 7px;
 	margin-top: 30px;
 	border: none;
@@ -154,7 +162,7 @@ h1 {
 	font-family: Amatic SC;
 	font-size: 25px;
 	border-radius: 10px;
-	width: 60px;
+	width: 70px;
 	margin-right: auto;
 	margin-left: 15px;
 	padding: 7px;
@@ -175,7 +183,7 @@ h1 {
 	font-family: Amatic SC;
 	font-size: 25px;
 	border-radius: 10px;
-	width: 60px;
+	width: 70px;
 	margin-right: auto;
 	margin-left: 575px;
 	padding: 7px;
@@ -207,11 +215,10 @@ h1 {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: -410px;
-	margin-left: 240px;
 	border-radius: 10px;
 	display: none;
 	z-index: 1000;
-	position: absolute;
+	position: relative;
 }
 
 .pronunciation {
@@ -276,11 +283,10 @@ h1 {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: -470px;
-	margin-left: 240px;
 	border-radius: 10px;
 	display: none;
 	z-index: 1000;
-	position: absolute;
+	position: relative;
 }
 
 .scoreHeader {
