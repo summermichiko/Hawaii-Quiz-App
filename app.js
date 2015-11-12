@@ -94,28 +94,28 @@ $(document).ready(function() {
 					'<form class="answerOptions">' +
 						'<label class="labelWrapper labelOne">' +
 							'<div class="optionWrapper">' +
-								'<img class="optionImage" src="images/' + questions[currentQuestion].answerImages[0] + '">' +
+								'<img class="optionImage" src="Images/' + questions[currentQuestion].answerImages[0] + '">' +
 								'<input class="radioButton" type="radio" name="option" value="0">' +
 								'<span class="option">' + ' ' + questions[currentQuestion].answerOptions[0] + '</span>' +
 							'</div>' +
 						'</label>' +
 						'<label class="labelWrapper labelTwo">' +
 							'<div class="optionWrapper">' +
-								'<img class="optionImage" src="images/' + questions[currentQuestion].answerImages[1] + '">' +
+								'<img class="optionImage" src="Images/' + questions[currentQuestion].answerImages[1] + '">' +
 								'<input class="radioButton" type="radio" name="option" value="1">' +
 								'<span class="option">' + ' ' + questions[currentQuestion].answerOptions[1] + '</span>' +
 							'</div>' +
 						'</label>' +
 						'<label class="labelWrapper labelThree">' +
 							'<div class="optionWrapper">' +
-								'<img class="optionImage" src="images/' + questions[currentQuestion].answerImages[2] + '">' +
+								'<img class="optionImage" src="Images/' + questions[currentQuestion].answerImages[2] + '">' +
 								'<input class="radioButton" type="radio" name="option" value="2">' +
 								'<span class="option">' + ' ' + questions[currentQuestion].answerOptions[2] + '</span>' +
 							'</div>' +
 						'</label>' +
 						'<label class="labelWrapper labelFour">' +
 							'<div class="optionWrapper">' +
-								'<img class="optionImage" src="images/' + questions[currentQuestion].answerImages[3] + '">' +
+								'<img class="optionImage" src="Images/' + questions[currentQuestion].answerImages[3] + '">' +
 								'<input class="radioButton" type="radio" name="option" value="3">' +
 								'<span class="option">' + ' ' + questions[currentQuestion].answerOptions[3] + '</span>' +
 							'</div>' +
@@ -136,27 +136,27 @@ $(document).ready(function() {
 		$(".scoreHeader").text("You scored: " + numberCorrect + " out of 5").show();
 		if (numberCorrect == 0) {
 			$(".result0").show();
-			$(".imageResult").attr("src", "images/haoleTourist.jpg");
+			$(".imageResult").attr("src", "Images/haoleTourist.jpg");
 			$(".scoreTitle").text("You're a FULL BLOWN TOURIST.");
 		} if (numberCorrect == 1) {
 			$(".result1").show();
-			$(".imageResult").attr("src", "images/haoleTourist.jpg");
+			$(".imageResult").attr("src", "Images/haoleTourist.jpg");
 			$(".scoreTitle").text("You're a FULL BLOWN TOURIST.");
 		} if (numberCorrect == 2) {
 			$(".result2").show();
-			$(".imageResult").attr("src", "images/undercoverTourist.jpg");
+			$(".imageResult").attr("src", "Images/undercoverTourist.jpg");
 			$(".scoreTitle").text("You're an UNDERCOVER TOURIST.");
 		} if (numberCorrect == 3) {
 			$(".result3").show();
-			$(".imageResult").attr("src", "images/trainingKamaaina.jpg");
+			$(".imageResult").attr("src", "Images/trainingKamaaina.jpg");
 			$(".scoreTitle").text("You're an UNDERCOVER TOURIST.");
 		} if (numberCorrect == 4) {
 			$(".result4").show();
-			$(".imageResult").attr("src", "images/trainingKamaaina.jpg");
+			$(".imageResult").attr("src", "Images/trainingKamaaina.jpg");
 			$(".scoreTitle").text("You're a KAMA`AINA IN TRAINING.");
 		} if (numberCorrect == 5) {
 			$(".result5").show();
-			$(".imageResult").attr("src", "images/trueKamaaina.jpg");
+			$(".imageResult").attr("src", "Images/trueKamaaina.jpg");
 			$(".scoreTitle").text("You're a TRUE KAMA`AINA.");
 		};
 	});
