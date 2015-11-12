@@ -3,63 +3,101 @@
 	<head>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="main.css">
-		<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:700|Amatic+SC:700" rel="stylesheet" type="text/css" />
-		<meta charset="UTF-8">
-		<title>Kama`aina Quiz App</title>
+		<link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width" />
+		<title>Kama'aina Quiz</title>
 	</head>
-	<body>
-		<div class="header">
-			<button class="directions" type="button">About</button>
-			<button class="newQuiz" type="button">New Quiz</button>
-		</div>
-		<div class="title">
-			<h1>Kama`aina Quiz</h1>
-		</div>
-		<div class="questionSection">
-			<h3 class="questionNumber">Question #1</h3>
-			<p class="question">It's your day off! Chee Pono! What beach do you spend the afternoon at?</p>
-			<form class="answerOptions">
-				<input type="radio" name="option" value="0">
-				<span class="option">Sandy's</span><br>
-				<input type="radio" name="option" value="1">
-				<span class="option">Ala Moana</span><br>
-				<input type="radio" name="option" value="2">
-				<span class="option">Waikiki</span><br>
-				<input type="radio" name="option" value="3">
-				<span class="option">Hanauma Bay</span><br>
-			</form>
-		</div>
-		<div class="submitButton">
-			<input class="submit" type="button" value="Submit">
-			<input class="next" type="button" value="Next">
-			<input class="score" type="button" value="Score">
-		</div>
-		<div class="comment">
-			<p>Get out of town and catch some waves at SANDY'S!</p>
-		</div>
-		<div class="definitionBox">
-			<h2 class="pronunciation">Kama`aina  [kah-mah-EYE-nah]</h2>
-			<p class="pos">noun</p>
-			<p class="definition">"Kama`aina", meaning "child of the land," derives from the words "kama", meaning "child", and "ʻāina", meaning 'land'. Kamaʻaina in the traditional sense is someone born in Hawaiʻi or who has made their residence in the islands for many years. The word "kamaʻaina" describes Hawaiʻi residents regardless of their racial background, as opposed to "kanaka" which refers to a person of native Hawaiian ancestry. More recently, the definition of a kamaʻaina has been expanded to include anyone who currently lives in Hawaiʻi, or who once lived there but has moved away. Take the quiz and find out if you're kama`aina! Good luck!</p>
-			<div class="button">
-				<button class="letsPlay" type="button">Let's Play!</button>
+	<body class="contentBody">
+		<script type="text/javascript">
+			var userHeight = $(window).height() -275;
+				document.write('<div class="container" style="min-height:' + userHeight + 'px;">');
+		</script>
+			<div class="topHeader">
+				<img src="images/sumoHead.png" class="localHead">
+				<h1>How Kama`aina Are You?</h1>
 			</div>
+			<div class="questionSection">
+				<h3 class="questionNumber">Question 1:</h3>
+				<p class="question">It's your day off - chee pono! What beach are you going to spend the afternoon at?</p>
+				<form class="answerOptions">
+					<label class="labelOne labelWrapper">
+						<div class="optionWrapper">
+							<img class="optionImage" src="images/sandys.jpg">
+							<input class="radioButton" type="radio" name="option" value="0">
+							<span class="option"> Sandy's</span>
+						</div>
+					</label>
+					<label class="labelTwo labelWrapper">
+						<div class="optionWrapper">
+							<img class="optionImage" src="images/alaMoana.jpg">
+							<input class="radioButton" type="radio" name="option" value="1">
+							<span class="option"> Ala Moana</span>
+						</div>
+					</label>
+					<label class="labelThree labelWrapper">
+						<div class="optionWrapper">
+							<img class="optionImage" src="images/waikiki.jpg">
+							<input class="radioButton" type="radio" name="option" value="2">
+							<span class="option"> Waikiki</span>
+						</div>
+					</label>
+					<label class="labelFour labelWrapper">
+						<div class="optionWrapper">
+							<img class="optionImage" src="images/hanauma.jpg">
+							<input class="radioButton" type="radio" name="option" value="3">
+							<span class="option"> Hanauma Bay</span>
+						</div>
+					</label>
+				</form>
+			</div>
+			<div class="greyBoxHolder">
+				<div class="wittyWrapper">
+					<h3 class="boolText"></h3>
+					<input class="next" type="button" value="Next">
+					<input class="score" type="button" value="View Score">
+					<div class="answerText">
+						<p>Get out of town and catch some waves at SANDY'S!</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- score box -->
+			<div class="scoreTime">
+				<div class="container">
+
+					<!-- hold big image -->
+					<div class="scoreImage">
+						<img class="imageResult" src="">
+					</div>
+
+					<!-- hold text -->
+					<div class="scoreText">
+						<div class="scoreHeader"></div>
+						<div class="scoreTitle"></div>
+						<div class="resultOptions">
+							<p class="result0">You should try get to Hawai`i when you have a chance. Don't worry, you'll learn fast!</p>
+							<p class="result1">Everyone has to take baby steps. You'll get there one spam musubi at a time.</p>
+							<p class="result2">Find the Uncles who play music at Ala Moana and hang with them for a bit. Hopefully they'll rub off on you a little.</p>
+							<p class="result3">Not quite there. Eat a few more loco mocos, and you'll be there in no time!</p>
+							<p class="result4">We'll call you "kama`aina in training." You'll look like a local in no time at all!</p>
+							<p class="result5">Chee hoo! You're 100% Kama`aina! Kama`aina discounts, here we come!</p>
+						</div>
+						<div class="tryAgainButton">
+							<input class="tryAgain" type="button" value="Play Again">
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
-		<div class="scoreTime">
-			<h2 class="scoreHeader">
-			YOU SCORED</h2>
-			<div id="scoreInput"></div>
-			<div class="resultOptions">
-				<p class="result0">You should probably get to Hawai`i when you have a chance. Don't worry, you'll learn fast!</p>
-				<p class="result1">Everyone has to take baby steps. You'll get there one spam musubi at a time.</p>
-				<p class="result2">Find the Uncles who play music at Ala Moana and hang with them for a bit. Hopefully they'll rub off on you a little.</p>
-				<p class="result3">Not quite there. Eat a few more loco mocos, and you'll be there in no time!</p>
-				<p class="result4">We'll call you "kama`aina in training." You'll look like a local in no time at all!</p>
-				<p class="result5">Chee hoo! You're 100% Kama`aina! Kama`aina discounts, here we come!</p>
-			</div>
-			<div class="button">
-				<input class="tryAgain" type="button" value="Try Again">
-			</div>
+		<!-- <div class="shakaWrapper" style="background-image: url('images/shakas.png'); background-repeat: no-repeat; background-size: cover; background-position: center bottom;"> -->
 		</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
@@ -68,10 +106,8 @@
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 		ga('create', 'UA-52980513-1', 'auto');
 		ga('send', 'pageview');
-
 	</script>
 	</body>
 </html>

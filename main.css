@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -42,314 +42,463 @@ table {
 	border-spacing: 0;
 }
 
-html { 
-  background: url(Images/2006-10-22Colocasia01.jpg) no-repeat center center fixed; 
+html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.directions {
-	background-color: black;
-	font-family: Amatic SC;
-	font-size: 31px;
-	border-radius: 10px;
-	width: 110px;
-	padding: 7px;
-	color: white;
-	margin-left: 20px;
-	margin-top: 20px;
-	border: none;
-	font-weight: bold;
-	cursor: pointer;
-	cursor: hand;
+/* MY STYLES BEGIN */
+.contentBody {
+	background-color: #fffcef;
+	font-family: Raleway;
+	font-weight: 300;
+	cursor: url("images/pineapple.png"), auto !important;
 }
 
-.newQuiz {
-	background-color: black;
-	font-family: Amatic SC;
-	font-size: 31px;
-	border-radius: 10px;
-	width: 110px;
-	padding: 7px;
-	color: white;
-	margin-left: 20px;
-	margin-top: 20px;
-	border: none;
-	font-weight: bold;
-	float: right;
-	margin-right: 20px;
-	cursor: pointer;
-	cursor: hand;
+.container {
+	width: 800px !important;
+	margin-bottom: 70px;
 }
 
-h1 {
-	color: white;
-	font-size: 80px;
-	font-family: Amatic SC;
+.startOverText {
+	cursor: pointer;
+	color: #4A3923;
+}
+
+.startOverText:hover {
+	text-decoration: none;
+	color: #4A3923;
+}
+
+.localHead {
+	height: 75px;
+	width: 80px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+}
+
+.topHeader h1 {
+	color: #4A3923;
+	font-size: 35px;
 	text-align: center;
 	font-weight: bold;
+	font-family: Bitter;
+	margin-top: 5px;
 }
 
 .questionSection {
-	width: 900px;
-	margin-right: auto;
-	margin-left: auto;
 	z-index: 1;
 }
- 
+
 .questionNumber {
-	color: white;
-	font-family: Amatic SC;
-	font-size: 40px;
-	text-align: center;
-	margin-top: 40px;
-	z-index: 1; 
+	color: #4A3923;
+	font-size: 20px;
+	margin-top: 20px;
+	z-index: 1;
+	margin-bottom: 5px;
 }
 
 .question {
-	color: white;
-	font-family: Josefin Sans;
-	text-align: center;
-	font-size: 25px;
-	margin-top: 25px;
+	color: #4A3923;
+	font-size: 20px;
 	z-index: 1;
+	padding-bottom: 0;
 }
 
 .answerOptions {
-	color: white;
-	font-family: Josefin Sans;
+	color: #4A3923;
 	text-align: left;
-	font-size: 25px;
-	margin-top: 25px;
-	width: 700px;
-	margin-right: auto;
-	margin-left: auto;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 	z-index: 1;
 }
 
-.submitButton {
-	margin-left: auto;
-	margin-right: auto;
-	width: 700px;
-	position: relative;
-}
-
-.submit {
-	text-align: center;
-	background-color: white;
-	font-family: Amatic SC;
-	font-size: 25px;
-	border-radius: 10px;
-	width: 70px;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-	padding: 7px;
-	margin-top: 30px;
-	border: none;
-	color: black;
-	font-weight: bold;
-	z-index: 1;
-	cursor: hand;
+.labelWrapper {
+	font-weight: 300 !important;
+	height: 295px;
+	width: 377px;
+	border: 1px solid #f0a830;
+	background-color: #fff;
+	border-radius: 2.5px;
+	padding: 5px;
 	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+.labelWrapper:hover {
+	background-color: #f0a830;
+	-webkit-transform: scale(1.015);
+	-ms-transform: scale(1.015);
+	transform: scale(1.015);
+}
+
+.selectedItem {
+	background-color: #88f078;
+	border: 1px solid #88f078;
+	color: #fff;
+}
+
+.selectedItem:hover {
+	background-color: #88f078;
+}
+
+.disabledItem {
+	background-color: #EF6B66;
+	border: 1px solid #EF6B66;
+	color: #fff;
+}
+
+.disabledItem:hover {
+	background-color: #EF6B66;
+}
+
+.labelOne {
+	margin-right: 5px;
+	margin-bottom: 8px;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.labelTwo {
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 0;
+	margin-right: 0;
+}
+
+.labelThree {
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.labelFour {
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+
+input {
+	cursor: pointer;
+}
+
+.optionWrapper {
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.optionImage {
+	width: 350px;
+	height: 240px;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+
+.radioButton {
+	display: none;
+}
+
+.buttonSection {
+	position: relative;
+	margin-bottom: 15px;
 }
 
 .next {
 	text-align: center;
-	background-color: yellow;
-	font-family: Amatic SC;
-	font-size: 25px;
-	border-radius: 10px;
-	width: 70px;
-	margin-right: auto;
-	margin-left: 15px;
-	padding: 7px;
-	margin-top: 30px;
+	background-color: #f0a830;
+	font-size: 15px;
+	border-radius: 2px;
+	padding: 7px 23px;
 	border: none;
-	color: black;
+	color: #fff;
 	font-weight: bold;
 	z-index: 1;
 	display: none;
-	position: absolute;
-	cursor: hand;
 	cursor: pointer;
+	float: right;
+	display: inline-block;
+}
+
+.next:focus {
+	outline: none;
 }
 
 .score {
 	text-align: center;
-	background-color: yellow;
-	font-family: Amatic SC;
-	font-size: 25px;
-	border-radius: 10px;
-	width: 70px;
-	margin-right: auto;
-	margin-left: 575px;
-	padding: 7px;
-	margin-top: 30px;
+	background-color: #f0a830;
+	font-size: 15px;
+	border-radius: 2px;
+	padding: 7px 23px;
 	border: none;
-	color: black;
+	color: #fff;
 	font-weight: bold;
 	z-index: 1;
 	display: none;
-	position: absolute;
-	cursor: hand;
 	cursor: pointer;
+	float: right;
 }
 
-.comment {
-	color: white;
-	font-family: Josefin Sans;
-	text-align: center;
-	font-size: 25px;
-	margin-top: 25px;
+.score:focus {
+	outline: none;
+}
+
+.greyBoxHolder {
+	display: none;
+	padding: 15px;
+	border: 1px solid #f0a830;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.boolText {
+	margin-top: 0;
+	display: inline-block;
+}
+
+.answerText {
+	color: #4A3923;
+	text-align: left;
+	font-size: 20px;
 	display: none;
 	z-index: 1;
 }
 
-.definitionBox {
-	width: 900px;
-	height: 440px;
-	background-color: black;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: -410px;
-	border-radius: 10px;
+.answerText p {
+	margin-bottom: 0px;
+}
+
+.shakaWrapper {
+	bottom: 0;
+	height: 275px;
+	width: 100%;
+	margin-top: 50px;
+}
+
+/* end of the game score styles */
+.scoreTime {
+	width: 100%;
+	height: 100%;
 	display: none;
 	z-index: 1000;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fffcef;
+	text-align: center;
 }
 
-.pronunciation {
-	color: white;
-	font-family: Amatic SC;
-	font-size: 40px;
-	padding-top: 30px;
-	padding-left: 70px;
-	z-index: 1000;
+.scoreImage {
+	height: 300px;
+	width: 300px;
+	border: none;
+	text-align: left;
+	display: inline-block;
+	margin-top: 50px;
 }
 
-.pos {
-	color: white;
-	font-family: Amatic SC;
-	font-size: 35px;
-	padding-left: 70px;
-	padding-top: 10px;
-	z-index: 1000;
+.scoreImage img {
+	height: 100%;
+	width: 100%;
 }
 
-.definition {
-	color: white;
-	font-family: Josefin Sans;
-	font-size: 23px;
-	padding-left: 70px;
-	padding-right: 70px;
+.scoreText {
+	width: 455px;
+	margin-left: 15px;
+	display: inline-block;
+	float: right;
+}
+
+.result0, .result1, .result2, .result3, .result4, .result5 {
+	color: #4A3923;
+	font-size: 20px;
+	text-align: left;
 	padding-top: 15px;
 	z-index: 1000;
-}
-
-.button {
-	width: 110px;
-	margin-right: auto;
-	margin-left: auto;
-	cursor: hand;
-	cursor: pointer;
-}
-
-.letsPlay {
-	text-align: center;
-	background-color: white;
-	font-family: Amatic SC;
-	font-size: 31px;
-	border-radius: 10px;
-	width: 110px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 7px;
-	margin-top: 20px;
-	border: none;
-	color: black;
-	font-weight: bold;
-	z-index: 1000;
-	cursor: hand;
-	cursor: pointer;
-}
-
-.scoreTime {
-	width: 900px;
-	height: 440px;
-	background-color: black;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: -470px;
-	border-radius: 10px;
 	display: none;
-	z-index: 1000;
-	position: relative;
 }
 
-.scoreHeader {
-	color: white;
-	font-family: Amatic SC;
-	font-size: 70px;
-	padding-top: 40px;
-	text-align: center;
-	z-index: 1000;
+.tryAgainButton {
+	text-align: left;
 }
 
 .tryAgain {
 	text-align: center;
-	background-color: white;
-	font-family: Amatic SC;
-	font-size: 31px;
-	border-radius: 10px;
-	width: 110px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 7px;
-	margin-top: 20px;
+	background-color: #f0a830;
+	font-size: 15px;
+	border-radius: 2px;
+	padding: 7px 23px;
 	border: none;
-	color: black;
+	color: #fff;
 	font-weight: bold;
+	margin-top: 10px;
 	z-index: 1000;
-	cursor: hand;
 	cursor: pointer;
 }
 
-#scoreInput {
-	color: white;
-	font-family: Amatic SC;
-	font-size: 90px;
-	padding-top: 40px;
-	text-align: center;
+.scoreHeader {
+	color: #4A3923;
+	font-size: 20px;
+	font-weight: 300;
+	margin-top: 50px;
 	z-index: 1000;
-	display: none;
+	text-align: left;
+	display: inline-block;
 }
 
-.result0, .result1, .result2, .result3, .result4, .result5 {
-	color: white;
-	font-family: Josefin Sans;
-	font-size: 26px;
-	margin-left: 100px;
-	margin-right: 100px;
-	text-align: center;
-	padding-top: 15px;
-	z-index: 1000;
-	display: none;
+.scoreTitle {
+	text-align: left;
+	color: #4A3923;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: -10px;
+	margin-top: 5px;
 }
 
+@media (max-width: 1199px) {
+	.container {
+		width: 700px !important;
+	}
+	.labelWrapper {
+		font-weight: 300 !important;
+		height: 255px;
+		width: 327px;
+		padding: 5px;
+		cursor: pointer;
+	}
+	.optionImage {
+		width: 300px;
+		height: 200px;
+		margin-top: 8px;
+		margin-bottom: 5px;
+	}
+	.scoreImage {
+		height: 300px;
+		width: 300px;
+		border: none;
+		text-align: left;
+		display: inline-block;
+		margin-top: 50px;
+	}
+	.scoreText {
+		width: 355px;
+		margin-left: 15px;
+		display: inline-block;
+		float: right;
+	}
+}
 
+@media (max-width: 991px) {
+	.container {
+		width: 600px !important;
+	}
+	.labelWrapper {
+		font-weight: 300 !important;
+		height: 255px;
+		width: 277px;
+		padding: 5px;
+		cursor: pointer;
+	}
+	.optionImage {
+		width: 250px;
+		height: 200px;
+		margin-top: 8px;
+		margin-bottom: 5px;
+	}
+	.scoreImage {
+		height: 250px;
+		width: 250px;
+		border: none;
+		text-align: left;
+		display: inline-block;
+		margin-top: 50px;
+	}
+	.scoreText {
+		width: 305px;
+		margin-left: 15px;
+		display: inline-block;
+		float: right;
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 767px) {
+	.container {
+		width: 100% !important;
+	}
+	.topHeader h1 {
+		font-size: 30px;
+	}
+	.labelWrapper {
+		font-weight: 300 !important;
+		height: 288px;
+		width: 100%;
+		padding: 5px;
+		cursor: pointer;
+	}
+	.optionImage {
+		margin-top: 0;
+		margin-bottom: 5px;
+		width: 100%;
+		height: 230px;
+	}
+	.labelOne {
+		margin-right: 0px;
+		margin-bottom: 10px;
+		margin-top: 0;
+		margin-left: 0;
+		padding: 15px;
+	}
+	.labelTwo {
+		margin-right: 0px;
+		margin-bottom: 10px;
+		margin-top: 0;
+		margin-left: 0;
+		padding: 15px;
+	}
+	.labelThree {
+		margin-right: 0px;
+		margin-bottom: 10px;
+		margin-top: 0;
+		margin-left: 0;
+		padding: 15px;
+	}
+	.labelFour {
+		margin-right: 0px;
+		margin-bottom: 10px;
+		margin-top: 0;
+		margin-left: 0;
+		padding: 15px;
+	}
+	.scoreImage {
+		height: 300px;
+		width: 100%;
+		border: none;
+		display: block;
+		margin-top: 50px;
+	}
+	.scoreText {
+		width: 100%;
+		display: block;
+		float: none;
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 15px;
+	}
+	.scoreHeader {
+		margin-top: 20px;
+	}
+	.tryAgainButton {
+		margin-bottom: 50px;
+	}
+}
 
