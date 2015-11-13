@@ -53,7 +53,7 @@ $(document).ready(function() {
 				$(this).closest('.labelWrapper').addClass('disabledItem');
 			}
 		});
-		$("body").animate({ scrollTop: $(document).height() - $(window).height() });
+		// $("body").animate({ scrollTop: $(document).height() - $(document).height() });
 		$(".greyBoxHolder").show();
 		var newComment = '<div class="answerText"><p>'+questions[currentQuestion].fact+'</p></div>';
 		$(".answerText").html(newComment);
@@ -162,7 +162,7 @@ $(document).ready(function() {
 	});
 
 	// click on start over button
-	$(".startOverText").click(function() {
+	$(".tryAgain").click(function() {
 		reStart();
 		$(".scoreTime").hide();
 	});
@@ -171,41 +171,45 @@ $(document).ready(function() {
 	$(document).find(".contentBody", "radioButton").css("margin-right", "5px !important");
 
 	function reStart() {
-		numberCorrect == 0;
+		numberCorrect = 0;
 		currentQuestion = 1;
-		$(".result0").hide();
-		$(".result1").hide();
-		$(".result2").hide();
-		$(".result3").hide();
-		$(".result4").hide();
-		$(".result5").hide();
-		$(".comment").hide();
-		$(".next").hide();
 		$(".score").hide();
+		$(".greyBoxHolder").hide();
 		var newQuestion =
 			'<div class="questionSection">' +
-				'<h3 class="questionNumber">Question #' + currentQuestion + '</h3>' +
-				'<p class="question">' + questions[currentQuestion].question + '</p>' +
+				'<h3 class="questionNumber">Question 1:</h3>' +
+				'<p class="question">It\'s your day off - chee pono! What beach are you going to spend the afternoon at?</p>' +
 				'<form class="answerOptions">' +
-					'<input type="radio" name="option" value="0">' +
-						'<span class="option">' + questions[currentQuestion].answerOptions[0] +
-						'</span><br>' +
-					'<input type="radio" name="option" value="1">' +
-						'<span class="option">' + questions[currentQuestion].answerOptions[1] +
-						'</span><br>' +
-					'<input type="radio" name="option" value="2">' +
-						'<span class="option">' + questions[currentQuestion].answerOptions[2] +
-						'</span><br>' +
-					'<input type="radio" name="option" value="3">' +
-						'<span class="option">' + questions[currentQuestion].answerOptions[3] +
-						'</span><br>' +
+					'<label class="labelOne labelWrapper">' +
+						'<div class="optionWrapper">' +
+							'<img class="optionImage" src="Images/sandys.jpg">' +
+							'<input class="radioButton" type="radio" name="option" value="0">' +
+							'<span class="option"> Sandy\'s</span>' +
+						'</div>' +
+					'</label>' +
+					'<label class="labelTwo labelWrapper">' +
+						'<div class="optionWrapper">' +
+							'<img class="optionImage" src="Images/alaMoana.jpg">' +
+							'<input class="radioButton" type="radio" name="option" value="1">' +
+							'<span class="option"> Ala Moana</span>' +
+						'</div>' +
+					'</label>' +
+					'<label class="labelThree labelWrapper">' +
+						'<div class="optionWrapper">' +
+							'<img class="optionImage" src="Images/waikiki.jpg">' +
+							'<input class="radioButton" type="radio" name="option" value="2">' +
+							'<span class="option"> Waikiki</span>' +
+						'</div>' +
+					'</label>' +
+					'<label class="labelFour labelWrapper">' +
+						'<div class="optionWrapper">' +
+							'<img class="optionImage" src="Images/hanauma.jpg">' +
+							'<input class="radioButton" type="radio" name="option" value="3">' +
+							'<span class="option"> Hanauma Bay</span>' +
+						'</div>' +
+					'</label>' +
 				'</form>' +
 			'</div>';
 		$(".questionSection").html(newQuestion);
 	};
-
-	$(".tryAgain").click(function() {
-		$(".scoreTime").hide();
-		location.reload();
-	});
 });

@@ -296,6 +296,7 @@ input {
 	left: 0;
 	background-color: #fffcef;
 	text-align: center;
+	overflow-y: scroll;
 }
 
 .scoreImage {
@@ -498,7 +499,7 @@ input {
 		margin-top: 20px;
 	}
 	.tryAgainButton {
-		margin-bottom: 50px;
+		margin-bottom: 0;
 	}
 }
 
