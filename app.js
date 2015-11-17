@@ -44,7 +44,7 @@ $(document).ready(function() {
 	var numberCorrect = 0;
 
 	// click on radio button
-	$(document).on("click", "input[type='radio']", function() {
+	$(document).on("click touchend", "input[type='radio']", function() {
 		$("input[type='radio']").attr('disabled', true);
 		$("input[type='radio']").each(function(index) {
 			if (index == questions[currentQuestion].correct) {
@@ -53,7 +53,7 @@ $(document).ready(function() {
 				$(this).closest('.labelWrapper').addClass('disabledItem');
 			}
 		});
-		// $("body").animate({ scrollTop: $(document).height() - $(document).height() });
+		$("body").animate({ scrollTop: $(document).height() - $(window).height() + 100 });
 		$(".greyBoxHolder").show();
 		var newComment = '<div class="answerText"><p>'+questions[currentQuestion].fact+'</p></div>';
 		$(".answerText").html(newComment);
@@ -76,7 +76,7 @@ $(document).ready(function() {
 		};
 	};
 
-	$(".next").click(function() {
+	$(".next").on("click touchend", function() {
 		moveOn();
 		$(".greyBoxHolder").hide();
 		$("body").animate({ scrollTop: 0 });
@@ -129,7 +129,7 @@ $(document).ready(function() {
 	};
 
 	// click on score button
-	$(".score").click(function() {
+	$(".score").on("click touchend", function() {
 		$("#scoreInput").html("");
 		$(".scoreTime").show();
 		$(".tryAgain").show();
@@ -162,7 +162,7 @@ $(document).ready(function() {
 	});
 
 	// click on start over button
-	$(".tryAgain").click(function() {
+	$(".tryAgain").on("click touchend", function() {
 		reStart();
 		$(".scoreTime").hide();
 	});
@@ -211,5 +211,6 @@ $(document).ready(function() {
 				'</form>' +
 			'</div>';
 		$(".questionSection").html(newQuestion);
+		$("body").animate({ scrollTop: $(document).height() - $(window).height() });
 	};
 });
