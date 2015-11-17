@@ -44,7 +44,7 @@ $(document).ready(function() {
 	var numberCorrect = 0;
 
 	// click on radio button
-	$(document).on("click touchend", "input[type='radio']", function() {
+	$(document).on("click", "input[type='radio']", function() {
 		$("input[type='radio']").attr('disabled', true);
 		$("input[type='radio']").each(function(index) {
 			if (index == questions[currentQuestion].correct) {
@@ -76,7 +76,7 @@ $(document).ready(function() {
 		};
 	};
 
-	$(".next").on("click touchend", function() {
+	$(".next").on("click", function() {
 		moveOn();
 		$(".greyBoxHolder").hide();
 		$("body").animate({ scrollTop: 0 });
@@ -129,7 +129,7 @@ $(document).ready(function() {
 	};
 
 	// click on score button
-	$(".score").on("click touchend", function() {
+	$(".score").on("click", function() {
 		$("#scoreInput").html("");
 		$(".scoreTime").show();
 		$(".tryAgain").show();
@@ -162,7 +162,7 @@ $(document).ready(function() {
 	});
 
 	// click on start over button
-	$(".tryAgain").on("click touchend", function() {
+	$(".tryAgain").on("click", function() {
 		reStart();
 		$(".scoreTime").hide();
 	});
