@@ -447,10 +447,6 @@ input {
 		width: 100%;
 		padding: 5px;
 		cursor: pointer;
-		transition: none;
-	}
-	.labelWrapper:hover {
-
 	}
 	.optionImage {
 		margin-top: 0;
