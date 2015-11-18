@@ -142,7 +142,7 @@ $(document).ready(function() {
 			$(".result1").show();
 			$(".imageResult").attr("src", "Images/haoleTourist.jpg");
 			$(".scoreTitle").text("You're a FULL BLOWN TOURIST.");
-		} if (numberCorrect == 2) {
+	} if (numberCorrect == 2) {
 			$(".result2").show();
 			$(".imageResult").attr("src", "Images/undercoverTourist.jpg");
 			$(".scoreTitle").text("You're an UNDERCOVER TOURIST.");
