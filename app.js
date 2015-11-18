@@ -49,8 +49,10 @@ $(document).ready(function() {
 		$("input[type='radio']").each(function(index) {
 			if (index == questions[currentQuestion].correct) {
 				$(this).closest('.labelWrapper').addClass('selectedItem');
+				$(this).closest('.labelWrapper').css('background-color', '#88f078 !important');
 			} else {
 				$(this).closest('.labelWrapper').addClass('disabledItem');
+				$(this).closest('.labelWrapper').css('background-color', '#EF6B66 !important');
 			}
 		});
 		$("body").animate({ scrollTop: $(document).height() - $(window).height() + 100 });
