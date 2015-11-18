@@ -138,7 +138,7 @@ html {
 }
 
 .selectedItem {
-	background-color: #88f078;
+	background-color: #88f078 !important;
 	border: 1px solid #88f078;
 	color: #fff;
 }
@@ -148,7 +148,7 @@ html {
 }
 
 .disabledItem {
-	background-color: #EF6B66;
+	background-color: #EF6B66 !important;
 	border: 1px solid #EF6B66;
 	color: #fff;
 }
