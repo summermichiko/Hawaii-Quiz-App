@@ -72,13 +72,53 @@ html {
 	color: #4A3923;
 }
 
-.localHead {
-	height: 75px;
-	width: 80px;
+.headHolder {
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.localHead {
+	height: 80px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 50px;
+}
+
+@-webkit-keyframes togglePineapple {
+  0% { transform: rotate(-45deg); }
+  25% { transform: rotate(0deg); }
+  50% { transform: rotate(45deg); }
+  75% { transform: rotate(0deg); }
+  100% { transform: rotate(-45deg); }
+}
+@-moz-keyframes togglePineapple {
+  0% { transform: rotate(-45deg); }
+  25% { transform: rotate(0deg); }
+  50% { transform: rotate(45deg); }
+  75% { transform: rotate(0deg); }
+  100% { transform: rotate(-45deg); }
+}
+@-o-keyframes togglePineapple {
+  0% { transform: rotate(-45deg); }
+  25% { transform: rotate(0deg); }
+  50% { transform: rotate(45deg); }
+  75% { transform: rotate(0deg); }
+  100% { transform: rotate(-45deg); }
+}
+@keyframes togglePineapple {
+  0% { transform: rotate(-45deg); }
+  25% { transform: rotate(0deg); }
+  50% { transform: rotate(45deg); }
+  75% { transform: rotate(0deg); }
+  100% { transform: rotate(-45deg); }
+}
+.localHead {
+  -webkit-animation: togglePineapple 3s infinite; /* Safari 4+ */
+  -moz-animation: togglePineapple 3s infinite; /* Fx 5+ */
+  -o-animation: togglePineapple 3s infinite; /* Opera 12+ */
+  animation: togglePineapple 3s infinite; /* IE 10+, Fx 29+ */
 }
 
 .topHeader h1 {
@@ -505,6 +545,9 @@ input {
 	}
 	.tryAgainButton {
 		margin-bottom: 0;
+	}
+	.localHead {
+		height: 60px;
 	}
 }
 
