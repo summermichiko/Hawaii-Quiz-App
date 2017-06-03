@@ -52,24 +52,24 @@ html {
 /* MY STYLES BEGIN */
 .contentBody {
 	background-color: #fffcef;
+	cursor: url("images/pineapple.png"), auto !important;
 	font-family: Raleway;
 	font-weight: 300;
-	cursor: url("images/pineapple.png"), auto !important;
 }
 
 .container {
-	width: 800px !important;
 	margin-bottom: 70px;
+	width: 800px !important;
 }
 
 .startOverText {
+	color: #4a3923;
 	cursor: pointer;
-	color: #4A3923;
 }
 
 .startOverText:hover {
+	color: #4a3923;
 	text-decoration: none;
-	color: #4A3923;
 }
 
 .headHolder {
@@ -81,9 +81,7 @@ html {
 
 .localHead {
 	height: 80px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 50px;
+	margin: 50px auto 0;
 }
 
 @-webkit-keyframes togglePineapple {
@@ -122,12 +120,12 @@ html {
 }
 
 .topHeader h1 {
-	color: #4A3923;
-	font-size: 35px;
-	text-align: center;
-	font-weight: bold;
+	color: #4a3923;
 	font-family: Bitter;
+	font-size: 35px;
+	font-weight: bold;
 	margin-top: 5px;
+	text-align: center;
 }
 
 .questionSection {
@@ -135,39 +133,39 @@ html {
 }
 
 .questionNumber {
-	color: #4A3923;
+	color: #4a3923;
 	font-size: 20px;
+	margin-bottom: 5px;
 	margin-top: 20px;
 	z-index: 1;
-	margin-bottom: 5px;
 }
 
 .question {
-	color: #4A3923;
+	color: #4a3923;
 	font-size: 20px;
-	z-index: 1;
 	padding-bottom: 0;
+	z-index: 1;
 }
 
 .answerOptions {
-	color: #4A3923;
-	text-align: left;
+	color: #4a3923;
 	font-size: 20px;
 	margin-top: 20px;
 	margin-bottom: 15px;
+	text-align: left;
 	z-index: 1;
 }
 
 .labelWrapper {
+	border: 1px solid #f0a830;
+	border-radius: 2.5px;
+	background-color: #fff;
+	cursor: pointer;
 	font-weight: 300 !important;
 	height: 295px;
-	width: 377px;
-	border: 1px solid #f0a830;
-	background-color: #fff;
-	border-radius: 2.5px;
 	padding: 5px;
-	cursor: pointer;
 	transition: all .3s ease-in-out;
+	width: 377px;
 }
 
 .labelWrapper:hover {
@@ -188,41 +186,29 @@ html {
 }
 
 .disabledItem {
-	background-color: #EF6B66 !important;
-	border: 1px solid #EF6B66;
+	background-color: #ef6b66 !important;
+	border: 1px solid #ef6b66;
 	color: #fff;
 }
 
 .disabledItem:hover {
-	background-color: #EF6B66;
+	background-color: #ef6b66;
 }
 
 .labelOne {
-	margin-right: 5px;
-	margin-bottom: 8px;
-	margin-top: 0;
-	margin-left: 0;
+	margin: 0 5px 8px 0;
 }
 
 .labelTwo {
-	margin-left: 5px;
-	margin-bottom: 5px;
-	margin-top: 0;
-	margin-right: 0;
+	margin: 0 0 5px 5px;
 }
 
 .labelThree {
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 0;
-	margin-left: 0;
+	margin: 5px 5px 0 0;
 }
 
 .labelFour {
-	margin-left: 5px;
-	margin-top: 5px;
-	margin-bottom: 0;
-	margin-right: 0;
+	margin: 5px 0 0 5px;
 }
 
 input {
@@ -231,18 +217,17 @@ input {
 
 .optionWrapper {
 	cursor: pointer;
-	display: inline-block;
-	text-align: center;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 
 .optionImage {
-	width: 350px;
 	height: 240px;
-	margin-top: 8px;
 	margin-bottom: 5px;
+	margin-top: 8px;
+	width: 350px;
 }
 
 .radioButton {
@@ -250,24 +235,23 @@ input {
 }
 
 .buttonSection {
-	position: relative;
 	margin-bottom: 15px;
+	position: relative;
 }
 
 .next {
-	text-align: center;
 	background-color: #f0a830;
-	font-size: 15px;
-	border-radius: 2px;
-	padding: 7px 23px;
 	border: none;
+	border-radius: 2px;
 	color: #fff;
-	font-weight: bold;
-	z-index: 1;
-	display: none;
 	cursor: pointer;
-	float: right;
 	display: inline-block;
+	float: right;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px 23px;
+	text-align: center;
+	z-index: 1;
 }
 
 .next:focus {
@@ -275,18 +259,19 @@ input {
 }
 
 .score {
-	text-align: center;
+
 	background-color: #f0a830;
-	font-size: 15px;
 	border-radius: 2px;
-	padding: 7px 23px;
 	border: none;
 	color: #fff;
-	font-weight: bold;
-	z-index: 1;
-	display: none;
 	cursor: pointer;
+	display: none;
 	float: right;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px 23px;
+	text-align: center;
+	z-index: 1;
 }
 
 .score:focus {
@@ -294,23 +279,23 @@ input {
 }
 
 .greyBoxHolder {
+	background-color: #fff;
+	border: 1px solid #f0a830;
+	border-radius: 2px;
 	display: none;
 	padding: 15px;
-	border: 1px solid #f0a830;
-	background-color: #fff;
-	border-radius: 2px;
 }
 
 .boolText {
-	margin-top: 0;
 	display: inline-block;
+	margin-top: 0;
 }
 
 .answerText {
-	color: #4A3923;
-	text-align: left;
-	font-size: 20px;
+	color: #4a3923;
 	display: none;
+	font-size: 20px;
+	text-align: left;
 	z-index: 1;
 }
 
@@ -321,31 +306,32 @@ input {
 .shakaWrapper {
 	bottom: 0;
 	height: 275px;
-	width: 100%;
 	margin-top: 50px;
+	width: 100%;
 }
 
 /* end of the game score styles */
 .scoreTime {
-	width: 100%;
-	height: 100%;
-	display: none;
-	z-index: 1000;
-	position: fixed;
-	top: 0;
-	left: 0;
 	background-color: #fffcef;
-	text-align: center;
+
+	display: none;
+	height: 100%;
+	left: 0;
 	overflow-y: scroll;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
 }
 
 .scoreImage {
-	height: 300px;
-	width: 300px;
 	border: none;
-	text-align: left;
 	display: inline-block;
+	height: 300px;
 	margin-top: 50px;
+	text-align: left;
+	width: 300px;
 }
 
 .scoreImage img {
@@ -354,19 +340,19 @@ input {
 }
 
 .scoreText {
-	width: 455px;
-	margin-left: 15px;
 	display: inline-block;
+	margin-left: 15px;
 	float: right;
+	width: 455px;
 }
 
 .result0, .result1, .result2, .result3, .result4, .result5 {
-	color: #4A3923;
-	font-size: 20px;
-	text-align: left;
-	padding-top: 15px;
-	z-index: 1000;
+	color: #4a3923;
 	display: none;
+	font-size: 20px;
+	padding-top: 15px;
+	text-align: left;
+	z-index: 1000;
 }
 
 .tryAgainButton {
@@ -374,35 +360,35 @@ input {
 }
 
 .tryAgain {
-	text-align: center;
 	background-color: #f0a830;
-	font-size: 15px;
-	border-radius: 2px;
-	padding: 7px 23px;
 	border: none;
+	border-radius: 2px;
 	color: #fff;
+	cursor: pointer;
+	font-size: 15px;
 	font-weight: bold;
 	margin-top: 10px;
+	padding: 7px 23px;
+	text-align: center;
 	z-index: 1000;
-	cursor: pointer;
 }
 
 .scoreHeader {
-	color: #4A3923;
+	color: #4a3923;
 	font-size: 20px;
 	font-weight: 300;
 	margin-top: 70px;
-	z-index: 1000;
 	text-align: left;
+	z-index: 1000;
 }
 
 .scoreTitle {
-	text-align: left;
-	color: #4A3923;
+	color: #4a3923;
 	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: -10px;
 	margin-top: 5px;
+	text-align: left;
 }
 
 @media (max-width: 1199px) {
@@ -410,31 +396,31 @@ input {
 		width: 700px !important;
 	}
 	.labelWrapper {
+		cursor: pointer;
 		font-weight: 300 !important;
 		height: 255px;
-		width: 327px;
 		padding: 5px;
-		cursor: pointer;
+		width: 327px;
 	}
 	.optionImage {
-		width: 300px;
 		height: 200px;
 		margin-top: 8px;
 		margin-bottom: 5px;
+		width: 300px;
 	}
 	.scoreImage {
-		height: 300px;
-		width: 300px;
 		border: none;
-		text-align: left;
 		display: inline-block;
+		height: 300px;
 		margin-top: 50px;
+		text-align: left;
+		width: 300px;
 	}
 	.scoreText {
-		width: 355px;
-		margin-left: 15px;
 		display: inline-block;
 		float: right;
+		margin-left: 15px;
+		width: 355px;
 	}
 }
 
@@ -443,34 +429,34 @@ input {
 		width: 600px !important;
 	}
 	.labelWrapper {
+		cursor: pointer;
 		font-weight: 300 !important;
 		height: 255px;
-		width: 277px;
 		padding: 5px;
-		cursor: pointer;
+		width: 277px;
 	}
 	.optionImage {
-		width: 250px;
 		height: 200px;
-		margin-top: 8px;
 		margin-bottom: 5px;
+		margin-top: 8px;
+		width: 250px;
 	}
 	.boolText {
 		padding-top: 5px;
 	}
 	.scoreImage {
-		height: 250px;
-		width: 250px;
 		border: none;
-		text-align: left;
 		display: inline-block;
+		height: 250px;
 		margin-top: 50px;
+		text-align: left;
+		width: 250px;
 	}
 	.scoreText {
-		width: 305px;
-		margin-left: 15px;
 		display: inline-block;
 		float: right;
+		margin-left: 15px;
+		width: 305px;
 	}
 }
 
@@ -482,63 +468,51 @@ input {
 		font-size: 30px;
 	}
 	.labelWrapper {
+		cursor: pointer;
 		font-weight: 300 !important;
 		height: 288px;
-		width: 100%;
 		padding: 5px;
-		cursor: pointer;
+		width: 100%;
 	}
 	.optionImage {
-		margin-top: 0;
-		margin-bottom: 5px;
-		width: 100%;
 		height: 230px;
+		margin-bottom: 5px;
+		margin-top: 0;
+		width: 100%;
 	}
 	.labelOne {
-		margin-right: 0px;
-		margin-bottom: 10px;
-		margin-top: 0;
-		margin-left: 0;
+		margin: 0 0 0 10px;
 		padding: 15px;
 	}
 	.labelTwo {
-		margin-right: 0px;
-		margin-bottom: 10px;
-		margin-top: 0;
-		margin-left: 0;
+		margin: 0 0 10px 0;
 		padding: 15px;
 	}
 	.labelThree {
-		margin-right: 0px;
-		margin-bottom: 10px;
-		margin-top: 0;
-		margin-left: 0;
+		margin: 0 0 10px 0;
 		padding: 15px;
 	}
 	.labelFour {
-		margin-right: 0px;
-		margin-bottom: 10px;
-		margin-top: 0;
-		margin-left: 0;
+		margin: 0 0 10px 0;
 		padding: 15px;
 	}
 	.boolText {
 		padding-top: 5px;
 	}
 	.scoreImage {
-		height: 300px;
-		width: 100%;
 		border: none;
 		display: block;
+		height: 300px;
 		margin-top: 50px;
+		width: 100%;
 	}
 	.scoreText {
-		width: 100%;
 		display: block;
 		float: none;
 		margin-left: 0;
 		padding-left: 0;
 		padding-right: 15px;
+		width: 100%;
 	}
 	.scoreHeader {
 		margin-top: 20px;
@@ -550,4 +524,3 @@ input {
 		height: 60px;
 	}
 }
-

@@ -75,8 +75,8 @@ $(document).ready(function() {
 			$(".boolText").text('CORRECT!').css('color', '#88f078');
 		} else {
 			$(".boolText").text('WRONG!').css('color', '#EF6B66');
-		};
-	};
+		}
+	}
 
 	$(".next").on("click", function() {
 		moveOn();
@@ -127,8 +127,8 @@ $(document).ready(function() {
 			$(".questionSection").html(newQuestion);
 		} else {
 			$(".score").show();
-		};
-	};
+		}
+	}
 
 	// click on score button
 	$(".score").on("click", function() {
@@ -136,31 +136,36 @@ $(document).ready(function() {
 		$(".scoreTime").show();
 		$(".tryAgain").show();
 		$(".scoreHeader").text("You scored: " + numberCorrect + " out of 5").show();
-		if (numberCorrect == 0) {
+		if (numberCorrect === 0) {
 			$(".result0").show();
 			$(".imageResult").attr("src", "Images/haoleTourist.jpg");
 			$(".scoreTitle").text("You're a FULL BLOWN TOURIST.");
-		} if (numberCorrect == 1) {
+		}
+		if (numberCorrect === 1) {
 			$(".result1").show();
 			$(".imageResult").attr("src", "Images/haoleTourist.jpg");
 			$(".scoreTitle").text("You're a FULL BLOWN TOURIST.");
-	} if (numberCorrect == 2) {
+		}
+		if (numberCorrect === 2) {
 			$(".result2").show();
 			$(".imageResult").attr("src", "Images/undercoverTourist.jpg");
 			$(".scoreTitle").text("You're an UNDERCOVER TOURIST.");
-		} if (numberCorrect == 3) {
+		}
+		if (numberCorrect === 3) {
 			$(".result3").show();
 			$(".imageResult").attr("src", "Images/trainingKamaaina.jpg");
 			$(".scoreTitle").text("You're an UNDERCOVER TOURIST.");
-		} if (numberCorrect == 4) {
+		}
+		if (numberCorrect === 4) {
 			$(".result4").show();
 			$(".imageResult").attr("src", "Images/trainingKamaaina.jpg");
 			$(".scoreTitle").text("You're a KAMA`AINA IN TRAINING.");
-		} if (numberCorrect == 5) {
+		}
+		if (numberCorrect === 5) {
 			$(".result5").show();
 			$(".imageResult").attr("src", "Images/trueKamaaina.jpg");
 			$(".scoreTitle").text("You're a TRUE KAMA`AINA.");
-		};
+		}
 	});
 
 	// click on start over button
@@ -214,5 +219,5 @@ $(document).ready(function() {
 			'</div>';
 		$(".questionSection").html(newQuestion);
 		$("body").animate({ scrollTop: $(document).height() - $(window).height() });
-	};
+	}
 });
